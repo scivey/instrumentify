@@ -1,0 +1,4 @@
+*.coffee
+integration
+node_modules
+coverage
