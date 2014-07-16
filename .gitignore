@@ -4,3 +4,8 @@ index.js
 test.js
 testUtil.js
 coverage
+lib/instrument.js
+spec/instrument.spec.js
+integration/bundle.js
+integration/OUT.js
+integration/run.js
