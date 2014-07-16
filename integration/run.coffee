@@ -26,21 +26,6 @@ getResult = (cb) ->
         .pipe( onFinish )
 
 
-allIndices = (toMatch, target) ->
-    count = 0
-    index = target.indexOf(toMatch)
-    current = target
-    while index isnt -1
-        count++
-        current = current.substring index
-        index = current.indexOf toMatch
-    count
-
-countFunctionWrappers = (sourceText) ->
-    toMatch = 'function(require,module,exports)'
-    count = allIndices(toMatch, sourceText)
-    count
-
 describe 'integration', ->
     data = {}
     before (done) ->
@@ -63,4 +48,3 @@ describe 'integration', ->
         ]
         _.each shouldInclude, (str) ->
             assert.include data.text, str
-        # assert.equal 3, countFunctionWrappers(data.text)

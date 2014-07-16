@@ -9,3 +9,4 @@ spec/instrument.spec.js
 integration/bundle.js
 integration/OUT.js
 integration/run.js
+integration/data/src/otherFn.js
